@@ -1,5 +1,10 @@
 import torch
 import argparse
+<<<<<<< HEAD
+from tool.darknet2pytorch import Darknet
+
+=======
+>>>>>>> 28e100262082aa1d7d36ff7b2d3f3c03110608a2
 
 def convert_to_onnx(cfgfile,weightfile):
     model = Darknet(cfgfile)
@@ -29,4 +34,8 @@ def get_args():
 
 if __name__ == '__main__':
 	args = get_args()
+<<<<<<< HEAD
+	convert_to_onnx(args.cfgfile,args.weightfile)
+=======
 	convert_to_onnx(args.configfile,args.weightfile)
+>>>>>>> 28e100262082aa1d7d36ff7b2d3f3c03110608a2
